@@ -4,8 +4,11 @@ from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 from aiogram.filters import Command
 from random import choice
 import asyncio
+import os
 
-bot = Bot(token='8708838713:AAHQX3ISBZihxbfma1U30v0oYc2GrchESKM')
+BOT_TOKEN - os.getenv("BOT_TOKEN")
+
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 
